@@ -6,10 +6,14 @@ const ReportHeader = () => {
     <div className="min-h-screen bg-gradient-hero flex items-center justify-center p-8">
       <Card className="max-w-4xl w-full bg-white/95 backdrop-blur-sm shadow-strong border-0 p-12 text-center">
         <div className="space-y-8">
-          {/* Logo placeholder */}
+          {/* Logo */}
           <div className="flex justify-center mb-8">
-            <div className="w-24 h-24 bg-gradient-primary rounded-full flex items-center justify-center shadow-medium">
-              <Ship className="w-12 h-12 text-white" />
+            <div className="w-32 h-20 flex items-center justify-center">
+              <img 
+                src="/lovable-uploads/ad001d00-73bb-44ed-ac3f-8933dabcbaa2.png" 
+                alt="SUPPLYMARINE Logo" 
+                className="max-w-full max-h-full object-contain"
+              />
             </div>
           </div>
           
