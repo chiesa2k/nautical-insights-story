@@ -7,24 +7,14 @@ const ReportHeader = () => {
       <Card className="max-w-4xl w-full bg-white/95 backdrop-blur-sm shadow-strong border-0 p-12 text-center">
         <div className="space-y-8">
           {/* Logo */}
-          <div className="flex justify-center mb-8">
-            <div className="w-80 h-32 flex items-center justify-center">
+          <div className="flex justify-center mb-12">
+            <div className="w-96 h-40 flex items-center justify-center">
               <img 
                 src="/lovable-uploads/ad001d00-73bb-44ed-ac3f-8933dabcbaa2.png" 
                 alt="SUPPLYMARINE Logo" 
-                className="max-w-full max-h-full object-contain drop-shadow-lg"
+                className="max-w-full max-h-full object-contain drop-shadow-xl"
               />
             </div>
-          </div>
-          
-          {/* Company Name */}
-          <div className="space-y-2">
-            <h1 className="text-5xl font-bold text-primary-dark">
-              SUPPLYMARINE
-            </h1>
-            <p className="text-xl text-primary-light font-medium">
-              HVAC-R Naval & Offshore
-            </p>
           </div>
           
           {/* Report Title */}
