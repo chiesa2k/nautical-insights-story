@@ -30,28 +30,28 @@ const Index = () => {
 
   return (
     <div className="relative">
-      {/* Navigation - Moved to bottom right */}
-      <div className="fixed bottom-6 right-6 z-50">
-        <div className="flex flex-col items-center space-y-4 bg-white/90 backdrop-blur-sm rounded-full px-4 py-6 shadow-strong">
+      {/* Navigation - Compact bottom right */}
+      <div className="fixed bottom-4 right-4 z-50">
+        <div className="flex flex-col items-center space-y-2 bg-white/80 backdrop-blur-sm rounded-full px-2 py-3 shadow-medium">
           <Button 
             variant="outline" 
             size="sm"
             onClick={prevSection}
             disabled={currentSection === 0}
-            className="rounded-full w-10 h-10 p-0"
+            className="rounded-full w-7 h-7 p-0 border-0 shadow-none"
           >
-            <ChevronLeft className="w-4 h-4" />
+            <ChevronLeft className="w-3 h-3" />
           </Button>
           
-          <div className="flex flex-col space-y-2">
+          <div className="flex flex-col space-y-1">
             {sections.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentSection(index)}
-                className={`w-3 h-3 rounded-full transition-all ${
+                className={`w-2 h-2 rounded-full transition-all ${
                   index === currentSection 
-                    ? 'bg-primary scale-110' 
-                    : 'bg-primary/30 hover:bg-primary/50'
+                    ? 'bg-primary scale-125' 
+                    : 'bg-primary/40 hover:bg-primary/60'
                 }`}
               />
             ))}
@@ -62,9 +62,9 @@ const Index = () => {
             size="sm"
             onClick={nextSection}
             disabled={currentSection === sections.length - 1}
-            className="rounded-full w-10 h-10 p-0"
+            className="rounded-full w-7 h-7 p-0 border-0 shadow-none"
           >
-            <ChevronRight className="w-4 h-4" />
+            <ChevronRight className="w-3 h-3" />
           </Button>
         </div>
       </div>
