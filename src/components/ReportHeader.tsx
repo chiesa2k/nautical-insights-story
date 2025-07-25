@@ -8,11 +8,11 @@ const ReportHeader = () => {
         <div className="space-y-8">
           {/* Logo */}
           <div className="flex justify-center mb-8">
-            <div className="w-32 h-20 flex items-center justify-center">
+            <div className="w-80 h-32 flex items-center justify-center">
               <img 
                 src="/lovable-uploads/ad001d00-73bb-44ed-ac3f-8933dabcbaa2.png" 
                 alt="SUPPLYMARINE Logo" 
-                className="max-w-full max-h-full object-contain"
+                className="max-w-full max-h-full object-contain drop-shadow-lg"
               />
             </div>
           </div>

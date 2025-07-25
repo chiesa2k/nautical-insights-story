@@ -30,20 +30,20 @@ const Index = () => {
 
   return (
     <div className="relative">
-      {/* Navigation */}
-      <div className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">
-        <div className="flex items-center space-x-4 bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 shadow-soft">
+      {/* Navigation - Moved to bottom right */}
+      <div className="fixed bottom-6 right-6 z-50">
+        <div className="flex flex-col items-center space-y-4 bg-white/90 backdrop-blur-sm rounded-full px-4 py-6 shadow-strong">
           <Button 
             variant="outline" 
             size="sm"
             onClick={prevSection}
             disabled={currentSection === 0}
-            className="rounded-full"
+            className="rounded-full w-10 h-10 p-0"
           >
             <ChevronLeft className="w-4 h-4" />
           </Button>
           
-          <div className="flex space-x-2">
+          <div className="flex flex-col space-y-2">
             {sections.map((_, index) => (
               <button
                 key={index}
@@ -62,7 +62,7 @@ const Index = () => {
             size="sm"
             onClick={nextSection}
             disabled={currentSection === sections.length - 1}
-            className="rounded-full"
+            className="rounded-full w-10 h-10 p-0"
           >
             <ChevronRight className="w-4 h-4" />
           </Button>
